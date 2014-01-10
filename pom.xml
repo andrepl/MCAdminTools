@@ -38,7 +38,7 @@
         </dependency>
         <dependency>
             <groupId>com.vexsoftware</groupId>
-            <artifactId>Votifier</artifactId>
+            <artifactId>votifier</artifactId>
             <version>1.9</version>
         </dependency>
     </dependencies>

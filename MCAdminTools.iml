@@ -18,7 +18,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="library" name="Maven: org.bukkit:bukkit:1.7.2-R0.1-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: com.vexsoftware:Votifier:1.9" level="project" />
+    <orderEntry type="library" name="Maven: com.vexsoftware:votifier:1.9" level="project" />
   </component>
 </module>
 
