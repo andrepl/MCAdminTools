@@ -15,6 +15,7 @@ import com.norcode.bukkit.mcadmintools.commands.MCATCommand;
 import com.norcode.bukkit.mcadmintools.commands.MoreCommand;
 import com.norcode.bukkit.mcadmintools.commands.PlayerHeadCommand;
 import com.norcode.bukkit.mcadmintools.commands.RepairCommand;
+import com.norcode.bukkit.mcadmintools.commands.ServerCommand;
 import com.norcode.bukkit.mcadmintools.commands.SetSpawnCommand;
 import com.norcode.bukkit.mcadmintools.commands.SmiteCommand;
 import com.norcode.bukkit.mcadmintools.commands.SpawnCommand;
@@ -76,6 +77,7 @@ public class MCAdminTools extends JavaPlugin {
         getServer().getPluginCommand("broadcast").setExecutor(new BroadcastCommand(this));
         getServer().getPluginCommand("playerhead").setExecutor(new PlayerHeadCommand(this));
 		getServer().getPluginCommand("sudo").setExecutor(new SudoCommand(this));
+		getServer().getPluginCommand("server").setExecutor(new ServerCommand(this));
 	}
 
 	public String getMsg(String key, Object... args) {

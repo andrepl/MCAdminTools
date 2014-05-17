@@ -111,7 +111,10 @@ commands:
     description: run a command as another player
     usage: /<command> <player> <command>
     permission: mcadmintools.sudo
-
+  server:
+    description: bungee server teleporter for bukkit (probably bypassed when used directly by the player)
+    usage: /<command> <server>
+    permission: mcadmintools.server
 permissions:
   mcadmintools.fly:
     default: op
@@ -194,6 +197,9 @@ permissions:
   mcadmintools.sudo:
     default: op
     description: gives access to 'sudo' command
+  mcadmintools.server:
+    default: op
+    description: gives access to server command
   mcadmintools.admin:
     default: op
     description: gives the access to all commands.

@@ -1,16 +1,16 @@
 package com.norcode.bukkit.mcadmintools.commands;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-
+import com.norcode.bukkit.mcadmintools.MCAdminTools;
+import com.norcode.bukkit.mcadmintools.exceptions.AmbiguousPlayerName;
+import com.norcode.bukkit.mcadmintools.exceptions.PlayerNotFound;
+import org.bukkit.World;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import com.norcode.bukkit.mcadmintools.MCAdminTools;
-import com.norcode.bukkit.mcadmintools.exceptions.AmbiguousPlayerName;
-import com.norcode.bukkit.mcadmintools.exceptions.PlayerNotFound;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class SpawnCommand extends BaseCommand {
 
@@ -28,7 +28,14 @@ public class SpawnCommand extends BaseCommand {
                     matches.add(p.getName());
                 }
             }
-        }
+        } else if (args.size() == 2) {
+
+			for (World w: plugin.getServer().getWorlds()) {
+				if (w.getName().toLowerCase().startsWith(args.peekLast())) {
+
+				}
+			}
+		}
         return matches;
     }
 
