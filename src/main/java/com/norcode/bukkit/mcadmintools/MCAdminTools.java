@@ -42,6 +42,7 @@ public class MCAdminTools extends JavaPlugin {
 	
 	@Override
 	public void onEnable() {
+		getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
 		getConfig().options().copyDefaults(true);
 		saveDefaultConfig();
 		reloadConfig();
