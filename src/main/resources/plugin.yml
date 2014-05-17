@@ -107,6 +107,11 @@ commands:
     description: spawn a players head
     usage: /<command> <headOwner> <receiver>
     permission: mcadmintools.playerhead
+  sudo:
+    description: run a command as another player
+    usage: /<command> <player> <command>
+    permission: mcadmintools.sudo
+
 permissions:
   mcadmintools.fly:
     default: op
@@ -186,6 +191,9 @@ permissions:
   mcadmintools.playerhead:
     default: op
     description: gives access to 'playerhead' command
+  mcadmintools.sudo:
+    default: op
+    description: gives access to 'sudo' command
   mcadmintools.admin:
     default: op
     description: gives the access to all commands.
@@ -217,3 +225,4 @@ permissions:
         mcadmintools.flyspeed: true
         mcadmintools.broadcast: true
         mcadmintools.playerhead: true
+        mcadmintools.sudo: true
